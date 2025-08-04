@@ -1,0 +1,27 @@
+import random
+
+def roll_dice():
+    """Simulates rolling a six-sided die."""
+    die_value = random.randint(1, 6)
+    return die_value
+
+def main():
+    """Main function to run the dice rolling simulator."""
+    print("Welcome to the Dice Rolling Simulator!")
+
+    while True:
+        user_input = input("Press Enter to roll the dice (or 'q' to quit): ").strip().lower()
+
+        if user_input == 'q':
+            print("Thanks for playing! Goodbye.")
+            break
+        elif user_input == '':
+            result = roll_dice()
+            print(f"You rolled a {result}!")
+        else:
+            print("Invalid input. Please press Enter to roll or 'q' to quit.")
+
+if __name__ == "__main__":
+    main()
+
+
