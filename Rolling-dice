@@ -1,0 +1,9 @@
+import random
+
+def roll_dice():
+    """Simulates rolling a single six-sided die."""
+    die_value = random.randint(1, 6)
+    print(f"You rolled a {die_value}")
+
+# To roll the dice:
+roll_dice()
